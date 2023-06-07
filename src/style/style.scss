@@ -1,0 +1,116 @@
+@import "default";
+
+#app {
+  width: 100%;
+}
+
+$strokeSecondary:#8B8B8B;
+$dark:#333333;
+
+
+@mixin font($size){
+  font-family: 'Montserrat', sans-serif;
+  font-weight: $size;
+}
+
+body {
+  flex-direction: column;
+}
+.wrapper {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+header {
+  width: 90%;
+  margin-bottom: 50px;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    a{
+      @include font(700);
+      font-size: 20px;
+      color: #8B8B8B;
+    }
+  }
+}
+.mainCard {
+  width: 100%;
+  height: 280px;
+  background-color: #00ca69;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+
+    .circle {
+      width: 80px;
+      height: 80px;
+      border-radius: 100%;
+      background-color: white;
+    }
+    p {
+      padding: 33px 5px;
+    }
+    P {
+      .Beatcup {
+        width: 70%;
+        text-align: center;
+      }
+    }
+  }
+}
+.container-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  .pirplebtn {
+    background-color: transparent;
+    width: 80%;
+    padding: 5px 20px;
+    border: 1px solid grey;
+  }
+}
+.process {
+  .container {
+    width: 33%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  .item {
+    width: 25%;
+  }
+  .title {
+    background-color: #00ca69;
+    padding: 10px 0;
+    border-radius: 10px 10px 0 0;
+    h3 {
+      text-align: center;
+      font-weight: 700;
+      font-size: 24px;
+      color: black;
+    }
+  }
+  .properties {
+    margin-bottom: 30px;
+    &-text {
+      padding: 10px 0;
+      border-bottom: 1px;
+    }
+  }
+}
