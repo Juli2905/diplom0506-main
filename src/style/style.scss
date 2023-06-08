@@ -6,7 +6,12 @@
 
 $strokeSecondary:#8B8B8B;
 $dark:#333333;
+$inverse:#A93DFF;
+$buttons:#FFC702;
 
+#inverse{
+  background-color: #A93DFF;
+}
 
 @mixin font($size){
   font-family: 'Montserrat', sans-serif;
@@ -24,7 +29,31 @@ h2{
 }
 
 h3{
+  @include font(700);
+  font-size: 16px;
+}
 
+h4{
+  @include font(300);
+  font-size: 16px;
+}
+
+@mixin button($color){
+  border: 1px solid $color;
+  color: $color;
+  @include font(700);
+  padding: 10px 0;
+  background-color: transparent;
+  font-size: 16px;
+  transition: 0.5s;
+  width: 25%;
+  border-radius: 5px;
+}
+@mixin activeButton($color){
+  @include button($color);
+  background-color: $color;
+  color: $dark;
+  cursor: pointer;
 }
 
 body {
@@ -35,7 +64,7 @@ body {
   margin: 0 auto;
 }
 header {
-  width: 90%;
+  width: 100%;
   margin-bottom: 50px;
   nav {
     display: flex;
@@ -46,7 +75,11 @@ header {
     a{
       @include font(700);
       font-size: 20px;
-      color: #8B8B8B;
+      color: $strokeSecondary;
+      &:hover{
+        color: $dark;
+        border-bottom: 1px solid #00ca69;
+    }
     }
   }
 }
@@ -54,7 +87,7 @@ header {
   width: 100%;
   height: 280px;
   background-color: #00ca69;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -70,7 +103,7 @@ header {
       border-radius: 100%;
       background-color: white;
     }
-    p {
+    h3 {
       @include font(700);
       padding: 33px 5px;
     }
@@ -86,17 +119,20 @@ header {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  margin-bottom: 50px;
 
   .pirplebtn {
     background-color: transparent;
-    width: 80%;
-    padding: 5px 20px;
+    width: 90%;
+    padding: 20px 10px;
     border: 1px solid grey;
+    border-radius: 5px;
+    text-align: center;
   }
 }
 .process {
   .container {
-    width: 33%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
   }

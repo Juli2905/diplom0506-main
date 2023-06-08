@@ -21,6 +21,10 @@ input[type=text] {
   width: 100%;
 }
 
+#inverse {
+  background-color: #A93DFF;
+}
+
 h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -33,6 +37,18 @@ h2 {
   font-size: 20px;
 }
 
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
 body {
   flex-direction: column;
 }
@@ -43,7 +59,7 @@ body {
 }
 
 header {
-  width: 90%;
+  width: 100%;
   margin-bottom: 50px;
 }
 header nav {
@@ -59,12 +75,16 @@ header nav a {
   font-size: 20px;
   color: #8B8B8B;
 }
+header nav a:hover {
+  color: #333333;
+  border-bottom: 1px solid #00ca69;
+}
 
 .mainCard {
   width: 100%;
   height: 280px;
   background-color: #00ca69;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,7 +101,7 @@ header nav a {
   border-radius: 100%;
   background-color: white;
 }
-.mainCard .logo p {
+.mainCard .logo h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   padding: 33px 5px;
@@ -96,16 +116,19 @@ header nav a {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  margin-bottom: 50px;
 }
 .container-btn .pirplebtn {
   background-color: transparent;
-  width: 80%;
-  padding: 5px 20px;
+  width: 90%;
+  padding: 20px 10px;
   border: 1px solid grey;
+  border-radius: 5px;
+  text-align: center;
 }
 
 .process .container {
-  width: 33%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
