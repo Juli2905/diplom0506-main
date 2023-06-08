@@ -125,39 +125,61 @@ header nav a:hover {
   border: 1px solid grey;
   border-radius: 5px;
   text-align: center;
+  color: #8B8B8B;
+}
+.container-btn .pirplebtn:hover {
+  background-color: #A93DFF;
+  color: white;
+  width: 90%;
+  padding: 20px 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
 }
 
 .process .container {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
 }
-
-.container {
-  width: 100%;
+.process .container .block {
+  width: 30%;
+  height: 182px;
   display: flex;
-  justify-content: space-between;
-}
-.container .item {
-  width: 25%;
-}
-.container .title {
-  background-color: #00ca69;
-  padding: 10px 0;
-  border-radius: 10px 10px 0 0;
-}
-.container .title h3 {
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  font-weight: 700;
-  font-size: 24px;
-  color: black;
-}
-.container .properties {
-  margin-bottom: 30px;
-}
-.container .properties-text {
   padding: 10px 0;
-  border-bottom: 1px;
+  background-color: #333333;
+  border-radius: 10px;
+}
+.process .container .block .logo-number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+.process .container .block .logo-number .circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: white;
+}
+.process .container .block .logo-number .logo {
+  padding: 1px 10px;
+  color: #333333;
+}
+.process .container .block h3 {
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.process .container .block h4 {
+  color: white;
+  width: 70%;
 }
 
 /*# sourceMappingURL=style.css.map */
