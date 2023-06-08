@@ -21,6 +21,18 @@ input[type=text] {
   width: 100%;
 }
 
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
 body {
   flex-direction: column;
 }
@@ -70,10 +82,12 @@ header nav a {
   background-color: white;
 }
 .mainCard .logo p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
   padding: 33px 5px;
 }
-.mainCard .logo P .Beatcup {
-  width: 70%;
+.mainCard h1 {
+  width: 80%;
   text-align: center;
 }
 
