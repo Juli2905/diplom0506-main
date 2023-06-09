@@ -8,6 +8,7 @@ $strokeSecondary:#8B8B8B;
 $dark:#333333;
 $inverse:#A93DFF;
 $buttons:#FFC702;
+$main:#00CA69;
 
 #inverse{
   background-color: #A93DFF;
@@ -188,4 +189,6 @@ header {
   }
 }
 
+@import './about';
+@import './tariffs'
 

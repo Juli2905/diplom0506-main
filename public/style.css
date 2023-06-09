@@ -182,4 +182,60 @@ header nav a:hover {
   width: 70%;
 }
 
+a {
+  text-decoration: none;
+}
+
+p, h1, h2, h3, h4, h5, h6, body {
+  margin: 0;
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+}
+
+input[type=text] {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.about {
+  width: 100%;
+  background-color: #00CA69;
+}
+.about h1 {
+  padding: 20px 0;
+  color: white;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.container .item {
+  width: 25%;
+}
+.container .title {
+  background-color: #00ca69;
+  padding: 10px 0;
+  border-radius: 10px 10px 0 0;
+}
+.container .title h3 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  color: black;
+}
+.container .properties {
+  margin-bottom: 30px;
+}
+.container .properties-text {
+  padding: 10px 0;
+  border-bottom: 1px;
+}
+
 /*# sourceMappingURL=style.css.map */
