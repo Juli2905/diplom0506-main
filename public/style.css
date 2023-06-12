@@ -45,7 +45,13 @@ h3 {
 
 h4 {
   font-family: "Montserrat", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   font-size: 16px;
 }
 
@@ -169,7 +175,7 @@ header nav a:hover {
   background-color: white;
 }
 .process .container .block .logo-number .logo {
-  padding: 1px 10px;
+  padding: 2px 10px;
   color: #333333;
 }
 .process .container .block h3 {
@@ -177,65 +183,36 @@ header nav a:hover {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.process .container .block h4 {
+.process .container .block h5 {
   color: white;
   width: 70%;
 }
 
-a {
-  text-decoration: none;
-}
-
-p, h1, h2, h3, h4, h5, h6, body {
-  margin: 0;
-}
-
-.btn {
-  border: none;
-  background-color: transparent;
-}
-
-input[type=text] {
-  border: none;
-  outline: none;
-  background-color: transparent;
-}
-
-.about {
+.about-title {
   width: 100%;
   background-color: #00CA69;
+  margin-bottom: 30px;
 }
-.about h1 {
+.about-title h1 {
   padding: 20px 0;
   color: white;
   text-align: center;
 }
-
-.container {
+.about .wrapper h4 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.about .wrapper .cardList {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-.container .item {
-  width: 25%;
-}
-.container .title {
-  background-color: #00ca69;
-  padding: 10px 0;
-  border-radius: 10px 10px 0 0;
-}
-.container .title h3 {
-  text-align: center;
-  font-weight: 700;
-  font-size: 24px;
-  color: black;
-}
-.container .properties {
-  margin-bottom: 30px;
-}
-.container .properties-text {
-  padding: 10px 0;
-  border-bottom: 1px;
+.about .wrapper .cardList .cardStatistic {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
