@@ -9,10 +9,10 @@ $dark:#333333;
 $inverse:#A93DFF;
 $buttons:#FFC702;
 $main:#00CA69;
+$strokeLight:#D4D4D4;
 
-#inverse{
-  background-color: #A93DFF;
-}
+
+
 
 @mixin font($size){
   font-family: 'Montserrat', sans-serif;
@@ -211,15 +211,76 @@ header {
     .cardList{
       width: 100%;
       display: flex;
+      flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      margin-bottom: 50px;
       .cardStatistic{
-        width: 20%;
+        width: 262px;
+        height: 180px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        border: 1px solid $strokeLight;
+        gap: 10px;
+        svg{
+          margin-top: 25px;
+        }
       }
     }
+    h2{
+      text-align: center;
+    }
+    .container{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+      .storyCard{
+        padding: 30px 10px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .storyItem{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            .titleYearGreen, .titleYear{
+              width: 20%;
+              align-items: center;
+              color: white;
+              border-radius: 10px;
+              padding: 5px;
+            }
+            .titleYearGreen{
+              background-color: $main;
+            }
+            .titleYear{
+              background-color: $dark;
+            }
+            .green{
+              color: $main;
+            }
+            
+        }
+        
+      }
+    }
+    
+  }
+
+}
+.tariffs{
+  width: 100%;
+  background-color: $inverse;
+  margin-bottom: 50px;
+  h1{
+    padding: 20px 0;
+      color: white;
+      text-align: center;
   }
 }
 

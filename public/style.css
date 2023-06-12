@@ -21,10 +21,6 @@ input[type=text] {
   width: 100%;
 }
 
-#inverse {
-  background-color: #A93DFF;
-}
-
 h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -205,14 +201,72 @@ header nav a:hover {
 .about .wrapper .cardList {
   width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 50px;
 }
 .about .wrapper .cardList .cardStatistic {
-  width: 20%;
+  width: 262px;
+  height: 180px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 1px solid #D4D4D4;
+  gap: 10px;
+}
+.about .wrapper .cardList .cardStatistic svg {
+  margin-top: 25px;
+}
+.about .wrapper h2 {
+  text-align: center;
+}
+.about .wrapper .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.about .wrapper .container .storyCard {
+  padding: 30px 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about .wrapper .container .storyCard .storyItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.about .wrapper .container .storyCard .storyItem .titleYearGreen, .about .wrapper .container .storyCard .storyItem .titleYear {
+  width: 20%;
+  align-items: center;
+  color: white;
+  border-radius: 10px;
+  padding: 5px;
+}
+.about .wrapper .container .storyCard .storyItem .titleYearGreen {
+  background-color: #00CA69;
+}
+.about .wrapper .container .storyCard .storyItem .titleYear {
+  background-color: #333333;
+}
+.about .wrapper .container .storyCard .storyItem .green {
+  color: #00CA69;
+}
+
+.tariffs {
+  width: 100%;
+  background-color: #A93DFF;
+  margin-bottom: 50px;
+}
+.tariffs h1 {
+  padding: 20px 0;
+  color: white;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
