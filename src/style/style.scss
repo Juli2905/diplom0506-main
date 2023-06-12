@@ -83,7 +83,7 @@ header {
       color: $strokeSecondary;
       &:hover{
         color: $dark;
-        border-bottom: 1px solid #00ca69;
+        border-bottom: 1px solid $main;
     }
     }
   }
@@ -128,7 +128,7 @@ header {
 
   .pirplebtn {
     background-color: transparent;
-    width: 90%;
+    width: 95%;
     padding: 20px 10px;
     border: 1px solid grey;
     border-radius: 5px;
@@ -137,11 +137,6 @@ header {
     &:hover{
       background-color: $inverse;
       color: white;
-      width: 90%;
-      padding: 20px 10px;
-      border: 1px solid grey;
-      border-radius: 5px;
-      text-align: center;
       cursor: pointer;
     }
   }
@@ -274,14 +269,63 @@ header {
 
 }
 .tariffs{
-  width: 100%;
+  &-title{
+    width: 100%;
   background-color: $inverse;
   margin-bottom: 50px;
+  }
   h1{
     padding: 20px 0;
       color: white;
       text-align: center;
   }
+  .wrapper{
+    .container {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .item {
+        width: 22%;
+      }
+      .title {
+        background-color: #00ca69;
+        padding: 10px 0;
+        border-radius: 10px 10px 0 0;
+        &-none{
+          background-color: transparent;
+          line-height: 24px;
+        }
+        h3 {
+          text-align: center;
+          font-weight: 700;
+          font-size: 24px;
+          color: black;
+        }
+      }
+      .properties {
+        margin-bottom: 30px;
+       
+        &-text {
+          padding: 10px 0;
+          border-bottom: 1px solid $strokeLight;
+          .bodyM{
+            text-align: center;
+          }
+        }
+      }
+    .btn{
+      width: 60%;
+      background-color: $buttons;
+      display: flex;
+      align-items: center;
+      border-radius: 10px;
+      h3{
+        padding: 10px 20px;
+        text-align: center;
+      }
+    }
+  }
+}
 }
 
 
