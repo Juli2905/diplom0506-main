@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500;700&display=swap");
 a {
   text-decoration: none;
 }
@@ -22,37 +23,38 @@ input[type=text] {
 }
 
 h1 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-weight: 700;
   font-size: 30px;
 }
 
 h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-weight: 700;
   font-size: 20px;
 }
 
 h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-weight: 700;
   font-size: 16px;
 }
 
 h4 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-weight: 500;
   font-size: 20px;
 }
 
 h5 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
 
 body {
   flex-direction: column;
+  font-family: "Exo 2";
 }
 
 .wrapper {
@@ -62,6 +64,7 @@ body {
 
 header {
   width: 100%;
+  padding: 25px 0 0;
   margin-bottom: 50px;
 }
 header nav {
@@ -69,17 +72,19 @@ header nav {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  padding: 20px 0;
 }
 header nav a {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-weight: 700;
   font-size: 20px;
+  width: 120px;
   color: #8B8B8B;
+  padding: 13px 0;
+  border-bottom: 2px solid transparent;
 }
 header nav a:hover {
   color: #333333;
-  border-bottom: 1px solid #00CA69;
+  border-bottom: 2px solid #00CA69;
 }
 
 .mainCard {
@@ -94,6 +99,7 @@ header nav a:hover {
 .mainCard .logo {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 20px 0;
 }
@@ -102,11 +108,13 @@ header nav a:hover {
   height: 80px;
   border-radius: 100%;
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .mainCard .logo h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-weight: 700;
-  padding: 33px 5px;
 }
 .mainCard h1 {
   width: 80%;
@@ -164,19 +172,20 @@ header nav a:hover {
   height: 40px;
   border-radius: 100%;
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .process .container .block .logo-number .logo {
-  padding: 2px 10px;
   color: #333333;
 }
 .process .container .block h3 {
   color: white;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 .process .container .block h5 {
   color: white;
-  width: 70%;
+  width: 80%;
 }
 
 .about-title {
@@ -272,7 +281,7 @@ header nav a:hover {
   width: 22%;
 }
 .tariffs .wrapper .container .title {
-  background-color: #00ca69;
+  background-color: #00CA69;
   padding: 10px 0;
   border-radius: 10px 10px 0 0;
 }
@@ -301,6 +310,7 @@ header nav a:hover {
   background-color: #FFC702;
   display: flex;
   align-items: center;
+  justify-content: center;
   border-radius: 10px;
 }
 .tariffs .wrapper .container .btn h3 {
