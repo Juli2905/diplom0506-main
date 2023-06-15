@@ -18,38 +18,67 @@ input[type=text] {
   background-color: transparent;
 }
 
-#app {
-  width: 100%;
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
 }
 
 h1 {
   font-family: "Exo 2", sans-serif;
-  font-weight: 700;
   font-size: 30px;
 }
 
 h2 {
   font-family: "Exo 2", sans-serif;
-  font-weight: 700;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 h3 {
   font-family: "Exo 2", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 h4 {
   font-family: "Exo 2", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 h5 {
   font-family: "Exo 2", sans-serif;
-  font-weight: 400;
+  font-size: 12px;
+}
+
+BodyM {
+  font-family: "Exo 2", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+BodyL {
+  font-family: "Exo 2", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+BodyS {
+  font-family: "Exo 2", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+CaptionM {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 500;
   font-size: 16px;
+}
+
+CaptionL {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+#app {
+  width: 100%;
 }
 
 body {
@@ -74,9 +103,6 @@ header nav {
   gap: 20px;
 }
 header nav a {
-  font-family: "Exo 2", sans-serif;
-  font-weight: 700;
-  font-size: 20px;
   width: 120px;
   color: #8B8B8B;
   padding: 13px 0;
@@ -98,23 +124,14 @@ header nav a:hover {
 }
 .mainCard .logo {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px 0;
-}
-.mainCard .logo .circle {
   width: 80px;
   height: 80px;
   border-radius: 100%;
   background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.mainCard .logo h3 {
-  font-family: "Exo 2", sans-serif;
-  font-weight: 700;
+  margin-top: 25px;
+  margin-bottom: 20px;
 }
 .mainCard h1 {
   width: 80%;
@@ -162,12 +179,6 @@ header nav a:hover {
   border-radius: 10px;
 }
 .process .container .block .logo-number {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px 0;
-}
-.process .container .block .logo-number .circle {
   width: 40px;
   height: 40px;
   border-radius: 100%;
@@ -175,15 +186,16 @@ header nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 10px 0;
 }
-.process .container .block .logo-number .logo {
+.process .container .block .logo-number h4 {
   color: #333333;
 }
-.process .container .block h3 {
+.process .container .block h4 {
   color: white;
   margin: 10px 0;
 }
-.process .container .block h5 {
+.process .container .block .CaptionL {
   color: white;
   width: 80%;
 }
@@ -198,7 +210,7 @@ header nav a:hover {
   color: white;
   text-align: center;
 }
-.about .wrapper h4 {
+.about .wrapper .BodyM {
   text-align: center;
   margin-bottom: 30px;
 }
@@ -222,6 +234,9 @@ header nav a:hover {
 .about .wrapper .cardList .cardStatistic svg {
   margin-top: 25px;
 }
+.about .wrapper .cardList .cardStatistic .BodyM {
+  text-align: center;
+}
 .about .wrapper h2 {
   text-align: center;
 }
@@ -244,11 +259,12 @@ header nav a:hover {
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  margin-bottom: 50px;
 }
 .about .wrapper .container .storyCard .storyItem .titleYearGreen, .about .wrapper .container .storyCard .storyItem .titleYear {
   width: 20%;
   align-items: center;
-  color: white;
+  color: #FAFAFA;
   border-radius: 10px;
   padding: 5px;
 }
@@ -276,24 +292,31 @@ header nav a:hover {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
 }
 .tariffs .wrapper .container .item {
   width: 22%;
 }
 .tariffs .wrapper .container .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
   background-color: #00CA69;
   padding: 10px 0;
   border-radius: 10px 10px 0 0;
-}
-.tariffs .wrapper .container .title-none {
-  background-color: transparent;
-  line-height: 24px;
 }
 .tariffs .wrapper .container .title h3 {
   text-align: center;
   font-weight: 700;
   font-size: 24px;
   color: black;
+}
+.tariffs .wrapper .container-none {
+  background-color: transparent;
+  line-height: 24px;
 }
 .tariffs .wrapper .container .properties {
   margin-bottom: 30px;
