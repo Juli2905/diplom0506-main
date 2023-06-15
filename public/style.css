@@ -276,6 +276,10 @@ header nav a:hover {
 }
 .about .wrapper .container .storyCard .storyItem .green {
   color: #00CA69;
+  text-align: center;
+}
+.about .wrapper .container .storyCard .storyItem h4 {
+  text-align: center;
 }
 
 .tariffs-title {
@@ -310,13 +314,12 @@ header nav a:hover {
 }
 .tariffs .wrapper .container .title h3 {
   text-align: center;
-  font-weight: 700;
-  font-size: 24px;
-  color: black;
+  color: #333333;
 }
-.tariffs .wrapper .container-none {
+.tariffs .wrapper .container .title-none {
   background-color: transparent;
-  line-height: 24px;
+  line-height: 20px;
+  padding: 15px 0;
 }
 .tariffs .wrapper .container .properties {
   margin-bottom: 30px;
@@ -325,20 +328,43 @@ header nav a:hover {
   padding: 10px 0;
   border-bottom: 1px solid #D4D4D4;
 }
-.tariffs .wrapper .container .properties-text .bodyM {
+.tariffs .wrapper .container .properties-text .BodyM {
   text-align: center;
+}
+.tariffs .wrapper .container .properties-text-none {
+  padding: 10px 0;
+  border-bottom: 1px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tariffs .wrapper .container .properties-none {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+}
+.tariffs .wrapper .container .properties-none :last-child {
+  border-bottom: 1px solid transparent;
+}
+.tariffs .wrapper .container .properties-none .properties-text {
+  width: 85%;
 }
 .tariffs .wrapper .container .btn {
   width: 60%;
   background-color: #FFC702;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
   border-radius: 10px;
 }
 .tariffs .wrapper .container .btn h3 {
-  padding: 10px 20px;
   text-align: center;
+}
+.tariffs .wrapper .container .btn-none {
+  background-color: transparent;
 }
 
 /*# sourceMappingURL=style.css.map */
