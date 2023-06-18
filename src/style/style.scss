@@ -230,14 +230,13 @@ header {
 }
 .tariffs{
   &-title{
-    width: 100%;
-  background-color: $inverse;
-  margin-bottom: 50px;
-  }
-  h1{
-    padding: 20px 0;
-      color: white;
+    background-color: $inverse;
+    margin-bottom: 50px;
+    h1{
+      color: $light;
+      padding: 20px 0;
       text-align: center;
+    } 
   }
   .wrapper{
     .container {
@@ -246,7 +245,7 @@ header {
       justify-content: space-between;
       flex-direction: row;
       align-items: flex-start;
-      padding: 0px;
+      margin-bottom: 50px;
       .item {
         width: 22%;
       }
@@ -264,9 +263,13 @@ header {
         }
       }
       .title-none{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 18px 0;
         background-color: transparent;
-        line-height: 20px;
-        padding: 15px 0;
+        line-height: 24px;
       }
       .properties {
         margin-bottom: 30px;
@@ -301,22 +304,285 @@ header {
       }
     .btn{
       width: 60%;
+      margin: 0 auto;
       background-color: $buttons;
       display: flex;
       justify-content: center;
       align-items: center;
       padding: 10px 20px;
       border-radius: 10px;
-      
+      &:hover{
+        cursor: pointer;
+      }
       h3{
         text-align: center;
       }
     }
     .btn-none{
       background-color: transparent;
+      line-height: 19px;
+    }
+  }
+  .custom-tariff{
+    background-color: $main;
+    padding: 30px 40px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1{
+      text-align: center;
+      margin-bottom: 40px;
+      color: $light;
+    }
+    .container-tariff{
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: $light;
+      margin-bottom: 50px;
+      .input{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $light;
+        :first-child{
+          margin-bottom: 20px;
+        }
+        :last-child{
+          margin-bottom: 10px;
+        }
+      }
+      }
+      .btn{
+        width: 30%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 0px;
+        border: 1px solid $light;
+        border-radius: 5px;
+        &:hover{
+          cursor: pointer;
+        }
+        h3{
+          color: $light;
+        }
+    }
+  }
+  .title-tariff{
+    margin-bottom: 50px;
+  }
+}
+}
+
+.contacts{
+  margin-bottom: 90px;
+  .contacts-title{
+    background-color: $dark;
+    margin-bottom: 50px;
+    h1{
+      color: $light;
+      padding: 20px 0;
+      text-align: center;
+    } 
+  }
+  .wrapper{
+    .about-text{
+      width: 90%;
+      margin-bottom: 50px;
+    }
+    .form-container{
+     
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      form{
+        width: 440px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        border: 1px solid $dark;
+        border-radius: 20px;
+        .form-title{
+          margin-bottom: 30px;
+        }
+        .tabpicker{
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          margin-bottom: 30px;
+          .btn-active{
+            width: 50%;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid $active;
+            &:hover{
+              cursor: pointer;
+              transition: 0.4s;
+            }
+            .BodyM{
+              color: $active;
+            }
+          }
+          .btn{
+            width: 50%;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid $strokeLight;
+            &:hover{
+              cursor: pointer;
+              transition: 0.4s;
+            }
+            .BodyM{
+              color: $strokeLight;
+            }
+          }
+        }
+        .container-email{
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          margin-bottom: 20px;
+          .email{
+            width: 86%;
+            border: 1px solid $dark;
+            border-radius: 0 10px 10px 0;
+            .BodyM{
+              padding: 10px 0 20px 10px;
+            }
+          }
+        }
+        .offer{
+          width: 87%;
+          height: 120px;
+          border: 1px solid $dark;
+          border-radius: 10px;
+          padding: 20px;
+          margin-bottom: 30px;
+        }
+        .btn-form{
+          width: 95%;
+          background-color: $buttons;
+          padding: 15px 0;
+          border-radius: 5px;
+          &:hover{
+            cursor: pointer;
+            transition: 0.4s;
+          }
+          h3{
+            text-align: center;
+          }
+        }
+      }
     }
   }
 }
+
+.more{
+  .wrapper{
+    h1{
+      padding: 20px 0;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .product-container{
+      display: flex;
+      margin-bottom: 80px;
+
+      
+      .productBlockMain, .productBlockDark, .productBlockInverse{
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: $light;
+        .productList{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          padding: 30px 20px;
+          .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            
+            h3{
+              text-align: center;
+            }
+            h1{
+              margin-top: 50px;
+              margin-bottom: 50px;
+            }
+            .btn{
+              width: 90%;
+              border: 1px solid $light;
+              border-radius: 5px;
+              &:hover{
+                cursor: pointer;
+                transition: 0.4s;
+              }
+              h3{
+                padding: 15px 0;
+              }
+            }
+          }
+          
+        }
+      }
+        .productBlockMain{
+          background-color: $main;
+        }
+        .productBlockDark{
+          background-color: $dark;
+        }
+        .productBlockInverse{
+          background-color: $inverse;
+        }
+       
+      
+    }
+    
+
+  }
+}
+footer{
+  background-color: $buttons;
+  .wrapper{
+    .container{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+      .menu{
+        gap: 10px;
+        nav{
+          gap: 10px;
+          a{
+            gap: 10px;
+          }
+        }
+      }
+      
+    }
+  }
 }
 
 

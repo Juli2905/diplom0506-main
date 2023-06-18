@@ -283,13 +283,12 @@ header nav a:hover {
 }
 
 .tariffs-title {
-  width: 100%;
   background-color: #A93DFF;
   margin-bottom: 50px;
 }
-.tariffs h1 {
+.tariffs-title h1 {
+  color: #FAFAFA;
   padding: 20px 0;
-  color: white;
   text-align: center;
 }
 .tariffs .wrapper .container {
@@ -298,7 +297,7 @@ header nav a:hover {
   justify-content: space-between;
   flex-direction: row;
   align-items: flex-start;
-  padding: 0px;
+  margin-bottom: 50px;
 }
 .tariffs .wrapper .container .item {
   width: 22%;
@@ -317,9 +316,13 @@ header nav a:hover {
   color: #333333;
 }
 .tariffs .wrapper .container .title-none {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 18px 0;
   background-color: transparent;
-  line-height: 20px;
-  padding: 15px 0;
+  line-height: 24px;
 }
 .tariffs .wrapper .container .properties {
   margin-bottom: 30px;
@@ -353,6 +356,7 @@ header nav a:hover {
 }
 .tariffs .wrapper .container .btn {
   width: 60%;
+  margin: 0 auto;
   background-color: #FFC702;
   display: flex;
   justify-content: center;
@@ -360,11 +364,256 @@ header nav a:hover {
   padding: 10px 20px;
   border-radius: 10px;
 }
+.tariffs .wrapper .container .btn:hover {
+  cursor: pointer;
+}
 .tariffs .wrapper .container .btn h3 {
   text-align: center;
 }
 .tariffs .wrapper .container .btn-none {
   background-color: transparent;
+  line-height: 19px;
+}
+.tariffs .wrapper .custom-tariff {
+  background-color: #00CA69;
+  padding: 30px 40px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tariffs .wrapper .custom-tariff h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #FAFAFA;
+}
+.tariffs .wrapper .custom-tariff .container-tariff {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #FAFAFA;
+  margin-bottom: 50px;
+}
+.tariffs .wrapper .custom-tariff .container-tariff .input {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #FAFAFA;
+}
+.tariffs .wrapper .custom-tariff .container-tariff .input :first-child {
+  margin-bottom: 20px;
+}
+.tariffs .wrapper .custom-tariff .container-tariff .input :last-child {
+  margin-bottom: 10px;
+}
+.tariffs .wrapper .custom-tariff .btn {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0px;
+  border: 1px solid #FAFAFA;
+  border-radius: 5px;
+}
+.tariffs .wrapper .custom-tariff .btn:hover {
+  cursor: pointer;
+}
+.tariffs .wrapper .custom-tariff .btn h3 {
+  color: #FAFAFA;
+}
+.tariffs .wrapper .title-tariff {
+  margin-bottom: 50px;
+}
+
+.contacts {
+  margin-bottom: 90px;
+}
+.contacts .contacts-title {
+  background-color: #333333;
+  margin-bottom: 50px;
+}
+.contacts .contacts-title h1 {
+  color: #FAFAFA;
+  padding: 20px 0;
+  text-align: center;
+}
+.contacts .wrapper .about-text {
+  width: 90%;
+  margin-bottom: 50px;
+}
+.contacts .wrapper .form-container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contacts .wrapper .form-container form {
+  width: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #333333;
+  border-radius: 20px;
+}
+.contacts .wrapper .form-container form .form-title {
+  margin-bottom: 30px;
+}
+.contacts .wrapper .form-container form .tabpicker {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+.contacts .wrapper .form-container form .tabpicker .btn-active {
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #FF5C16;
+}
+.contacts .wrapper .form-container form .tabpicker .btn-active:hover {
+  cursor: pointer;
+  transition: 0.4s;
+}
+.contacts .wrapper .form-container form .tabpicker .btn-active .BodyM {
+  color: #FF5C16;
+}
+.contacts .wrapper .form-container form .tabpicker .btn {
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #D4D4D4;
+}
+.contacts .wrapper .form-container form .tabpicker .btn:hover {
+  cursor: pointer;
+  transition: 0.4s;
+}
+.contacts .wrapper .form-container form .tabpicker .btn .BodyM {
+  color: #D4D4D4;
+}
+.contacts .wrapper .form-container form .container-email {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+.contacts .wrapper .form-container form .container-email .email {
+  width: 86%;
+  border: 1px solid #333333;
+  border-radius: 0 10px 10px 0;
+}
+.contacts .wrapper .form-container form .container-email .email .BodyM {
+  padding: 10px 0 20px 10px;
+}
+.contacts .wrapper .form-container form .offer {
+  width: 87%;
+  height: 120px;
+  border: 1px solid #333333;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.contacts .wrapper .form-container form .btn-form {
+  width: 95%;
+  background-color: #FFC702;
+  padding: 15px 0;
+  border-radius: 5px;
+}
+.contacts .wrapper .form-container form .btn-form:hover {
+  cursor: pointer;
+  transition: 0.4s;
+}
+.contacts .wrapper .form-container form .btn-form h3 {
+  text-align: center;
+}
+
+.more .wrapper h1 {
+  padding: 20px 0;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.more .wrapper .product-container {
+  display: flex;
+  margin-bottom: 80px;
+}
+.more .wrapper .product-container .productBlockMain, .more .wrapper .product-container .productBlockDark, .more .wrapper .product-container .productBlockInverse {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #FAFAFA;
+}
+.more .wrapper .product-container .productBlockMain .productList, .more .wrapper .product-container .productBlockDark .productList, .more .wrapper .product-container .productBlockInverse .productList {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+}
+.more .wrapper .product-container .productBlockMain .productList .container, .more .wrapper .product-container .productBlockDark .productList .container, .more .wrapper .product-container .productBlockInverse .productList .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.more .wrapper .product-container .productBlockMain .productList .container h3, .more .wrapper .product-container .productBlockDark .productList .container h3, .more .wrapper .product-container .productBlockInverse .productList .container h3 {
+  text-align: center;
+}
+.more .wrapper .product-container .productBlockMain .productList .container h1, .more .wrapper .product-container .productBlockDark .productList .container h1, .more .wrapper .product-container .productBlockInverse .productList .container h1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.more .wrapper .product-container .productBlockMain .productList .container .btn, .more .wrapper .product-container .productBlockDark .productList .container .btn, .more .wrapper .product-container .productBlockInverse .productList .container .btn {
+  width: 90%;
+  border: 1px solid #FAFAFA;
+  border-radius: 5px;
+}
+.more .wrapper .product-container .productBlockMain .productList .container .btn:hover, .more .wrapper .product-container .productBlockDark .productList .container .btn:hover, .more .wrapper .product-container .productBlockInverse .productList .container .btn:hover {
+  cursor: pointer;
+  transition: 0.4s;
+}
+.more .wrapper .product-container .productBlockMain .productList .container .btn h3, .more .wrapper .product-container .productBlockDark .productList .container .btn h3, .more .wrapper .product-container .productBlockInverse .productList .container .btn h3 {
+  padding: 15px 0;
+}
+.more .wrapper .product-container .productBlockMain {
+  background-color: #00CA69;
+}
+.more .wrapper .product-container .productBlockDark {
+  background-color: #333333;
+}
+.more .wrapper .product-container .productBlockInverse {
+  background-color: #A93DFF;
+}
+
+footer {
+  background-color: #FFC702;
+}
+footer .wrapper .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+footer .wrapper .container .menu {
+  gap: 10px;
+}
+footer .wrapper .container .menu nav {
+  gap: 10px;
+}
+footer .wrapper .container .menu nav a {
+  gap: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
