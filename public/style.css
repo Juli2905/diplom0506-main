@@ -93,7 +93,7 @@ body {
 
 header {
   width: 100%;
-  padding: 25px 0 0;
+  padding: 25px 0;
   margin-bottom: 50px;
 }
 header nav {
@@ -607,10 +607,6 @@ footer .wrapper .container {
   padding: 20px 0;
 }
 footer .wrapper .container .menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
   padding: 10px;
 }
 footer .wrapper .container .menu nav a .BodyM {
