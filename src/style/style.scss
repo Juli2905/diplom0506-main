@@ -1,6 +1,6 @@
 @import "default";
 @import "fonts";
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500;700&display=swap");
 
 #app {
   width: 100%;
@@ -8,7 +8,7 @@
 
 body {
   flex-direction: column;
-  font-family: 'Exo 2';
+  font-family: "Exo 2";
 }
 .wrapper {
   max-width: 1110px;
@@ -23,16 +23,16 @@ header {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    a{
+    a {
       width: 120px;
       color: $strokeSecondary;
       padding: 13px 0;
       border-bottom: 2px solid transparent;
       transition: 0.4s;
-      &:hover{
+      &:hover {
         color: $dark;
         border-bottom: 2px solid $main;
-    }
+      }
     }
   }
 }
@@ -76,7 +76,7 @@ header {
     border-radius: 5px;
     text-align: center;
     color: $strokeSecondary;
-    &:hover{
+    &:hover {
       background-color: $inverse;
       color: white;
       cursor: pointer;
@@ -90,7 +90,7 @@ header {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 70px;
-    .block{
+    .block {
       width: 30%;
       height: 182px;
       display: flex;
@@ -100,54 +100,54 @@ header {
       padding: 10px 0;
       background-color: $dark;
       border-radius: 10px;
-      .logo-number{
-          width: 40px;
-          height: 40px;
-          border-radius: 100%;
-          background-color: $light;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          margin: 10px 0;
-        h4{
+      .logo-number {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        background-color: $light;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+        h4 {
           color: $dark;
         }
       }
-      h4{
+      h4 {
         color: $light;
         margin: 10px 0;
       }
-      .CaptionL{
+      .CaptionL {
         color: $light;
         width: 80%;
       }
     }
   }
 }
-.about{
-  &-title{
+.about {
+  &-title {
     width: 100%;
     background-color: $main;
     margin-bottom: 30px;
-    h1{
+    h1 {
       padding: 20px 0;
       color: $light;
       text-align: center;
     }
   }
-  .wrapper{
-    .BodyM{
+  .wrapper {
+    .BodyM {
       text-align: center;
       margin-bottom: 30px;
     }
-    .cardList{
+    .cardList {
       width: 100%;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 50px;
-      .cardStatistic{
+      .cardStatistic {
         width: 262px;
         height: 180px;
         display: flex;
@@ -155,72 +155,72 @@ header {
         align-items: center;
         border: 1px solid $strokeLight;
         gap: 10px;
-        svg{
+        svg {
           margin-top: 25px;
         }
-        .BodyM{
+        .BodyM {
           text-align: center;
         }
       }
     }
-    h2{
+    h2 {
       text-align: center;
     }
-    .container{
+    .container {
       width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-top: 20px;
-      .storyCard{
-          padding: 30px 10px;
-          width: 100%;
+      .storyCard {
+        padding: 30px 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .storyItem {
           display: flex;
           flex-direction: column;
           align-items: center;
-          .storyItem{
-            display: flex;
-            flex-direction: column;
+          gap: 10px;
+          margin-bottom: 50px;
+          .titleYearGreen,
+          .titleYear {
+            width: 20%;
             align-items: center;
-            gap: 10px;
-            margin-bottom: 50px;
-            .titleYearGreen, .titleYear{
-              width: 20%;
-              align-items: center;
-              color: $light;
-              border-radius: 10px;
-              padding: 5px;
-            }
-            .titleYearGreen{
-              background-color: $main;
-            }
-            .titleYear{
-              background-color: $dark;
-            }
-            .green{
-              color: $main;
-              text-align: center;
-            }   
-            h4{
-              text-align: center;
-            }
-        }  
+            color: $light;
+            border-radius: 10px;
+            padding: 5px;
+          }
+          .titleYearGreen {
+            background-color: $main;
+          }
+          .titleYear {
+            background-color: $dark;
+          }
+          .green {
+            color: $main;
+            text-align: center;
+          }
+          h4 {
+            text-align: center;
+          }
+        }
       }
-    }  
+    }
   }
-
 }
-.tariffs{
-  &-title{
+.tariffs {
+  &-title {
     background-color: $inverse;
     margin-bottom: 50px;
-    h1{
+    h1 {
       color: $light;
       padding: 20px 0;
       text-align: center;
-    } 
+    }
   }
-  .wrapper{
+  .wrapper {
     .container {
       width: 100%;
       display: flex;
@@ -244,7 +244,7 @@ header {
           color: $dark;
         }
       }
-      .title-none{
+      .title-none {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -258,11 +258,11 @@ header {
         &-text {
           padding: 10px 0;
           border-bottom: 1px solid $strokeLight;
-          .BodyM{
+          .BodyM {
             text-align: center;
           }
         }
-        &-text-none{
+        &-text-none {
           padding: 10px 0;
           border-bottom: 1px solid transparent;
           display: flex;
@@ -270,77 +270,76 @@ header {
           align-items: center;
         }
       }
-      .properties-none{
+      .properties-none {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
         margin-bottom: 30px;
-        :last-child{
+        :last-child {
           border-bottom: 1px solid transparent;
         }
-        .properties-text{
+        .properties-text {
           width: 85%;
         }
-      
       }
-    .btn{
-      width: 60%;
-      margin: 0 auto;
-      background-color: $buttons;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 10px 20px;
-      border-radius: 10px;
-      &:hover{
-        cursor: pointer;
-      }
-      h3{
-        text-align: center;
-      }
-    }
-    .btn-none{
-      background-color: transparent;
-      line-height: 19px;
-    }
-  }
-  .custom-tariff{
-    background-color: $main;
-    padding: 30px 40px;
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    h1{
-      text-align: center;
-      margin-bottom: 40px;
-      color: $light;
-    }
-    .container-tariff{
-      width: 90%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      color: $light;
-      margin-bottom: 50px;
-      .input{
-        width: 30%;
+      .btn {
+        width: 60%;
+        margin: 0 auto;
+        background-color: $buttons;
         display: flex;
-        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+        border-radius: 10px;
+        &:hover {
+          cursor: pointer;
+        }
+        h3 {
+          text-align: center;
+        }
+      }
+      .btn-none {
+        background-color: transparent;
+        line-height: 19px;
+      }
+    }
+    .custom-tariff {
+      background-color: $main;
+      padding: 30px 40px;
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      h1 {
+        text-align: center;
+        margin-bottom: 40px;
+        color: $light;
+      }
+      .container-tariff {
+        width: 90%;
+        display: flex;
         justify-content: space-between;
         align-items: center;
-        border-bottom: 1px solid $light;
-        :first-child{
-          margin-bottom: 20px;
-        }
-        :last-child{
-          margin-bottom: 10px;
+        color: $light;
+        margin-bottom: 50px;
+        .input {
+          width: 30%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 1px solid $light;
+          :first-child {
+            margin-bottom: 20px;
+          }
+          :last-child {
+            margin-bottom: 10px;
+          }
         }
       }
-      }
-      .btn{
+      .btn {
         width: 30%;
         display: flex;
         flex-direction: row;
@@ -349,44 +348,43 @@ header {
         padding: 15px 0px;
         border: 1px solid $light;
         border-radius: 5px;
-        &:hover{
+        &:hover {
           cursor: pointer;
         }
-        h3{
+        h3 {
           color: $light;
         }
+      }
+    }
+    .title-tariff {
+      margin-bottom: 50px;
     }
   }
-  .title-tariff{
-    margin-bottom: 50px;
-  }
-}
 }
 
-.contacts{
+.contacts {
   margin-bottom: 90px;
-  .contacts-title{
+  .contacts-title {
     background-color: $dark;
     margin-bottom: 50px;
-    h1{
+    h1 {
       color: $light;
       padding: 20px 0;
       text-align: center;
-    } 
+    }
   }
-  .wrapper{
-    .about-text{
+  .wrapper {
+    .about-text {
       width: 90%;
       margin-bottom: 50px;
     }
-    .form-container{
-     
+    .form-container {
       margin: 0 auto;
       display: flex;
       align-items: center;
       justify-content: center;
-      
-      form{
+
+      form {
         width: 440px;
         display: flex;
         flex-direction: column;
@@ -394,16 +392,16 @@ header {
         padding: 20px;
         border: 1px solid $dark;
         border-radius: 20px;
-        .form-title{
+        .form-title {
           margin-bottom: 30px;
         }
-        .tabpicker{
+        .tabpicker {
           width: 100%;
           display: flex;
           flex-direction: row;
           align-items: flex-start;
           margin-bottom: 30px;
-          .btn-active{
+          .btn-active {
             width: 50%;
             padding: 10px;
             display: flex;
@@ -411,63 +409,64 @@ header {
             justify-content: center;
             border-bottom: 1px solid $active;
             transition: 0.4s;
-            &:hover{
+            &:hover {
               cursor: pointer;
-              
             }
-            .BodyM{
+            .BodyM {
               color: $active;
             }
           }
-          .btn{
+          .btn {
             width: 50%;
             padding: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
             border-bottom: 1px solid $strokeLight;
-            &:hover{
+            transition: 0.4s;
+            &:hover {
               cursor: pointer;
-              transition: 0.4s;
             }
-            .BodyM{
+            .BodyM {
               color: $strokeLight;
             }
           }
         }
-        .container-email{
+        .container-email {
           width: 100%;
           display: flex;
           align-items: center;
           justify-content: flex-start;
           margin-bottom: 20px;
-          .email{
-            width: 86%;
+          .email {
+            width: 85%;
             border: 1px solid $dark;
             border-radius: 0 10px 10px 0;
-            .BodyM{
-              padding: 10px 0 20px 10px;
-            }
+            padding: 10px 0 20px 10px;
+            font-family: "Exo 2";
+            outline: none;
           }
         }
-        .offer{
-          width: 87%;
+        .offer {
+          width: 89%;
           height: 120px;
           border: 1px solid $dark;
           border-radius: 10px;
           padding: 20px;
           margin-bottom: 30px;
+          font-family: "Exo 2";
+          outline: none;
         }
-        .btn-form{
-          width: 95%;
+        .btn-form {
+          width: 98%;
           background-color: $buttons;
           padding: 15px 0;
           border-radius: 5px;
-          &:hover{
+          transition: 0.4s;
+          &:hover {
             cursor: pointer;
-            transition: 0.4s;
           }
-          h3{
+          h3 {
             text-align: center;
           }
         }
@@ -476,96 +475,91 @@ header {
   }
 }
 
-.more{
-  .wrapper{
-    h1{
+.more {
+  .wrapper {
+    h1 {
       padding: 20px 0;
       text-align: center;
       margin-bottom: 50px;
     }
-    .product-container{
+    .product-container {
       display: flex;
       margin-bottom: 80px;
 
-      
-      .productBlockMain, .productBlockDark, .productBlockInverse{
+      .productBlockMain,
+      .productBlockDark,
+      .productBlockInverse {
         width: 33%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         color: $light;
-        .productList{
+        .productList {
           display: flex;
           flex-direction: row;
           align-items: center;
           justify-content: center;
           padding: 30px 20px;
-          .container{
+          .container {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             margin: 0 auto;
-            
-            h3{
+            h3 {
               text-align: center;
             }
-            h1{
+            h1 {
               margin-top: 50px;
               margin-bottom: 50px;
             }
-            .btn{
+            .btn {
               width: 90%;
               border: 1px solid $light;
               border-radius: 5px;
-              &:hover{
+              transition: 0.4s;
+              &:hover {
                 cursor: pointer;
-                transition: 0.4s;
               }
-              h3{
+              h3 {
                 padding: 15px 0;
               }
             }
           }
-          
         }
       }
-        .productBlockMain{
-          background-color: $main;
-        }
-        .productBlockDark{
-          background-color: $dark;
-        }
-        .productBlockInverse{
-          background-color: $inverse;
-        }
-       
-      
+      .productBlockMain {
+        background-color: $main;
+      }
+      .productBlockDark {
+        background-color: $dark;
+      }
+      .productBlockInverse {
+        background-color: $inverse;
+      }
     }
-    
-
   }
 }
-footer{
+footer {
   background-color: $buttons;
-  .wrapper{
-    .container{
+  .wrapper {
+    .container {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 20px 0;
-      .menu{
+      .menu {
         padding: 10px;
-        nav{
-          a{
-            .BodyM{
+        nav {
+          a {
+            .BodyM {
               margin-bottom: 10px;
               color: $dark;
             }
           }
         }
       }
-      .logo{
+      .logo {
         width: 80px;
         height: 80px;
         border-radius: 100%;
@@ -573,13 +567,10 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
-        h4{
+        h4 {
           color: $light;
         }
       }
     }
   }
 }
-
-
-

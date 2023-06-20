@@ -263,7 +263,8 @@ header nav a:hover {
   gap: 10px;
   margin-bottom: 50px;
 }
-.about .wrapper .container .storyCard .storyItem .titleYearGreen, .about .wrapper .container .storyCard .storyItem .titleYear {
+.about .wrapper .container .storyCard .storyItem .titleYearGreen,
+.about .wrapper .container .storyCard .storyItem .titleYear {
   width: 20%;
   align-items: center;
   color: #FAFAFA;
@@ -495,10 +496,10 @@ header nav a:hover {
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid #D4D4D4;
+  transition: 0.4s;
 }
 .contacts .wrapper .form-container form .tabpicker .btn:hover {
   cursor: pointer;
-  transition: 0.4s;
 }
 .contacts .wrapper .form-container form .tabpicker .btn .BodyM {
   color: #D4D4D4;
@@ -511,30 +512,32 @@ header nav a:hover {
   margin-bottom: 20px;
 }
 .contacts .wrapper .form-container form .container-email .email {
-  width: 86%;
+  width: 85%;
   border: 1px solid #333333;
   border-radius: 0 10px 10px 0;
-}
-.contacts .wrapper .form-container form .container-email .email .BodyM {
   padding: 10px 0 20px 10px;
+  font-family: "Exo 2";
+  outline: none;
 }
 .contacts .wrapper .form-container form .offer {
-  width: 87%;
+  width: 89%;
   height: 120px;
   border: 1px solid #333333;
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 30px;
+  font-family: "Exo 2";
+  outline: none;
 }
 .contacts .wrapper .form-container form .btn-form {
-  width: 95%;
+  width: 98%;
   background-color: #FFC702;
   padding: 15px 0;
   border-radius: 5px;
+  transition: 0.4s;
 }
 .contacts .wrapper .form-container form .btn-form:hover {
   cursor: pointer;
-  transition: 0.4s;
 }
 .contacts .wrapper .form-container form .btn-form h3 {
   text-align: center;
@@ -549,44 +552,60 @@ header nav a:hover {
   display: flex;
   margin-bottom: 80px;
 }
-.more .wrapper .product-container .productBlockMain, .more .wrapper .product-container .productBlockDark, .more .wrapper .product-container .productBlockInverse {
+.more .wrapper .product-container .productBlockMain,
+.more .wrapper .product-container .productBlockDark,
+.more .wrapper .product-container .productBlockInverse {
   width: 33%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   color: #FAFAFA;
 }
-.more .wrapper .product-container .productBlockMain .productList, .more .wrapper .product-container .productBlockDark .productList, .more .wrapper .product-container .productBlockInverse .productList {
+.more .wrapper .product-container .productBlockMain .productList,
+.more .wrapper .product-container .productBlockDark .productList,
+.more .wrapper .product-container .productBlockInverse .productList {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   padding: 30px 20px;
 }
-.more .wrapper .product-container .productBlockMain .productList .container, .more .wrapper .product-container .productBlockDark .productList .container, .more .wrapper .product-container .productBlockInverse .productList .container {
+.more .wrapper .product-container .productBlockMain .productList .container,
+.more .wrapper .product-container .productBlockDark .productList .container,
+.more .wrapper .product-container .productBlockInverse .productList .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
 }
-.more .wrapper .product-container .productBlockMain .productList .container h3, .more .wrapper .product-container .productBlockDark .productList .container h3, .more .wrapper .product-container .productBlockInverse .productList .container h3 {
+.more .wrapper .product-container .productBlockMain .productList .container h3,
+.more .wrapper .product-container .productBlockDark .productList .container h3,
+.more .wrapper .product-container .productBlockInverse .productList .container h3 {
   text-align: center;
 }
-.more .wrapper .product-container .productBlockMain .productList .container h1, .more .wrapper .product-container .productBlockDark .productList .container h1, .more .wrapper .product-container .productBlockInverse .productList .container h1 {
+.more .wrapper .product-container .productBlockMain .productList .container h1,
+.more .wrapper .product-container .productBlockDark .productList .container h1,
+.more .wrapper .product-container .productBlockInverse .productList .container h1 {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.more .wrapper .product-container .productBlockMain .productList .container .btn, .more .wrapper .product-container .productBlockDark .productList .container .btn, .more .wrapper .product-container .productBlockInverse .productList .container .btn {
+.more .wrapper .product-container .productBlockMain .productList .container .btn,
+.more .wrapper .product-container .productBlockDark .productList .container .btn,
+.more .wrapper .product-container .productBlockInverse .productList .container .btn {
   width: 90%;
   border: 1px solid #FAFAFA;
   border-radius: 5px;
-}
-.more .wrapper .product-container .productBlockMain .productList .container .btn:hover, .more .wrapper .product-container .productBlockDark .productList .container .btn:hover, .more .wrapper .product-container .productBlockInverse .productList .container .btn:hover {
-  cursor: pointer;
   transition: 0.4s;
 }
-.more .wrapper .product-container .productBlockMain .productList .container .btn h3, .more .wrapper .product-container .productBlockDark .productList .container .btn h3, .more .wrapper .product-container .productBlockInverse .productList .container .btn h3 {
+.more .wrapper .product-container .productBlockMain .productList .container .btn:hover,
+.more .wrapper .product-container .productBlockDark .productList .container .btn:hover,
+.more .wrapper .product-container .productBlockInverse .productList .container .btn:hover {
+  cursor: pointer;
+}
+.more .wrapper .product-container .productBlockMain .productList .container .btn h3,
+.more .wrapper .product-container .productBlockDark .productList .container .btn h3,
+.more .wrapper .product-container .productBlockInverse .productList .container .btn h3 {
   padding: 15px 0;
 }
 .more .wrapper .product-container .productBlockMain {
