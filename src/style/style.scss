@@ -58,6 +58,7 @@ header {
   h1 {
     width: 80%;
     text-align: center;
+    color: $light;
   }
 }
 .container-btn {
@@ -409,9 +410,10 @@ header {
             align-items: center;
             justify-content: center;
             border-bottom: 1px solid $active;
+            transition: 0.4s;
             &:hover{
               cursor: pointer;
-              transition: 0.4s;
+              
             }
             .BodyM{
               color: $active;

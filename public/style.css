@@ -137,6 +137,7 @@ header nav a:hover {
 .mainCard h1 {
   width: 80%;
   text-align: center;
+  color: #FAFAFA;
 }
 
 .container-btn {
@@ -479,10 +480,10 @@ header nav a:hover {
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid #FF5C16;
+  transition: 0.4s;
 }
 .contacts .wrapper .form-container form .tabpicker .btn-active:hover {
   cursor: pointer;
-  transition: 0.4s;
 }
 .contacts .wrapper .form-container form .tabpicker .btn-active .BodyM {
   color: #FF5C16;
